@@ -16,24 +16,15 @@
 <center><h2 style="font-family: 'Courier New', Courier, monospace;">Tetris</h2></center>
     <div class="placemat medium" style="border: 10px double burlywood; border-radius: 10px;">
 		<div id="tetris">
-						<div class="left">
-							
-							<div class="menu">
-								<div><a href="javascript:void(0)" id="tetris-menu-start">New Game</a></div>
-								<div id="tetris-pause">
-									<a href="javascript:void(0)" id="tetris-menu-pause">Pause</a>
-								</div>
-								<div style="display: none;" id="tetris-resume">
-									<a href="javascript:void(0)" id="tetris-menu-resume">Resume</a>
-								</div>
-								<div id="tetris-sounds">
-									<input type="checkbox" id="sounds" value="1" checked="checked"> Sounds
-								</div>
-							</div>
-
-                             <span id="controls">
-                                 <center>
-                                   <button class="key" id="up" style="margin-bottom: 5px;">⬆️</button><br> 
+		     <div class="left">
+			  <div class="menu">
+				<div><a href="javascript:void(0)" id="tetris-menu-start">New Game</a></div>
+			        <div id="tetris-pause"><a href="javascript:void(0)" id="tetris-menu-pause">Pause</a></div>
+				<div style="display: none;" id="tetris-resume"><a href="javascript:void(0)" id="tetris-menu-resume">Resume</a></div>
+		                 <div id="tetris-sounds"><input type="checkbox" id="sounds" value="1" checked="checked"> Sounds </div>
+			   </div>
+			<span id="controls">
+                        <center> <button class="key" id="up" style="margin-bottom: 5px;">⬆️</button><br> 
 								   <button class="key" id="left" style="margin-left: 0px;">⬅️</button>
 								   <button class="key" id="down">⬇️</button>  
 								   <button class="key" id="right" onclick="javascript:this.moveRight">➡️</button>
@@ -74,11 +65,6 @@
 							<div class="grid6"></div>
 						</div>
 	</div>
-	<script type="text/javascript">
-			var tetrisGame = new Tetris();
-	</script>
-
-			
-
+	<script type="text/javascript"> var tetrisGame = new Tetris(); </script>
 </body>
 </html>
